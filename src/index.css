@@ -1,3 +1,11 @@
 @import 'tailwindcss';
-@import 'tailwindcss';
-@plugin "daisyui";
+@plugin "daisyui" {
+  /* Wireframe is set as default; Business is added as the alternative */
+  themes: sunset, silk;
+}
+
+@layer components {
+  .align-element {
+    @apply mx-auto max-w-6xl px-8;
+  }
+}
