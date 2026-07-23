@@ -6,13 +6,13 @@ import NavLinks from './NavLinks'
 import { useState } from 'react'
 const themes = {
   sunset: 'sunset',
-  business: 'business',
+  silk: 'silk',
 }
 const NavBar = () => {
-  const [theme, setTheme] = useState(themes.business)
+  const [theme, setTheme] = useState(themes.silk)
   const handleTheme = () => {
-    const { sunset, business } = themes
-    const newTheme = theme === sunset ? business : sunset
+    const { sunset, silk } = themes
+    const newTheme = theme === sunset ? silk : sunset
     document.documentElement.setAttribute('data-theme', theme)
     setTheme(newTheme)
   }
